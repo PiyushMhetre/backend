@@ -12,7 +12,7 @@ app.use(express.json());
 
 import todoRouter from './routes/todos.js';
 
-
+console.log("hit index.js in backend ")
 app.use(cors({
   origin: 'http://localhost:3000',
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow these methods
