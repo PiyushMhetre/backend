@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 export function dbconnect() {
-  mongoose.connect(process.env.DATABASE_URL || 'mongodb+srv://piyushmhetre9596:aXcwASYL1eQfppAc@cluster0.chtw4ix.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', { useNewUrlParser: true, useUnifiedTopology: true })
+  mongoose.connect(process.env.DATABASE_URL || 'mongodb+srv://piyushmhetre9596:aXcwASYL1eQfppAc@cluster0.chtw4ix.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
     .then(() => {
       console.log("MongoDB connected successfully");
     })
