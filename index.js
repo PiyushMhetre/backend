@@ -14,13 +14,8 @@ app.use(express.json());
 
 import todoRouter from './routes/todos.js';
 
-console.log("hit index.js in backend ")
-app.use(cors({
-  origin: 'http://ec2-54-172-63-251.compute-1.amazonaws.com',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], 
-  // Allow these methods
-//   allowedHeaders: ['Content-Type', 'Authorization'], // Allow these headers
-}));
+console.log("hit index.js in backend ");
+app.use(cors());
 app.use("/api/v1", todoRouter); 
 
 // app.get('*', (req, res) => {
